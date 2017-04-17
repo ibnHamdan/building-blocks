@@ -1,0 +1,33 @@
+$pagination-font-size: rem-calc(14) !default;
+$pagination-item-padding: rem-calc(3 10) !default;
+$pagination-item-background-hover: $light-gray !default;
+$pagination-item-background-current: $primary-color !default;
+$pagination-item-color-current: $white !default;
+
+.pages {
+    list-style-type: none;
+    margin: 0;
+}
+
+.pageNumber {
+    display: inline-block;
+    cursor: pointer;
+    padding: $pagination-item-padding;
+    margin-right: 1rem;
+    border-radius: 0.1875rem;
+    font-size: $pagination-font-size;
+    color: #074E68;
+    font-weight: 600;
+    &:hover:not(.current) {
+        background: $pagination-item-background-hover;
+        color: #074E68;
+        font-weight: 700;
+    }
+}
+
+.current {
+    background: $pagination-item-background-current;
+    color: $pagination-item-color-current;
+    font-weight: 700;
+}
+
