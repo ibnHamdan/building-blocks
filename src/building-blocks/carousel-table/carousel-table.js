@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
   var totalRows = $('#tblData').find('tbody tr:has(td)').length;
   var recordPerPage = 3;
   var totalPages = Math.ceil(totalRows / recordPerPage);
@@ -30,4 +30,3 @@ $(document).ready(function() {
       $(tr[i]).show();
     }
   });
-});
