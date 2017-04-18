@@ -2,7 +2,7 @@ const table = document.querySelector('#tblData');
 const rows = table.querySelector('tbody').rows.length;
 const rowsInPage = 3;
 const totalPages = Math.ceil(rows / rowsInPage);
-const $pagination = $('<ul class="pagination text-center"></ul>');
+const $pagination = $('<ul class="pages text-center"></ul>');
 
 
 for (i = 0; i< totalPages; i++) {
