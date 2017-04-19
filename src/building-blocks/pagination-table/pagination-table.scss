@@ -4,6 +4,15 @@ $pagination-item-background-hover: $light-gray !default;
 $pagination-item-background-current: $primary-color !default;
 $pagination-item-color-current: $white !default;
 
+
+
+.table-container {
+    display: block;
+    background: lightgray;
+    width: 100%;
+    height: auto;
+
+}
 .pages {
     list-style-type: none;
     margin: 0;

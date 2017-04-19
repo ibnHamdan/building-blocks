@@ -1,14 +1,20 @@
 const table = document.querySelector('#tblData');
 const rows = table.querySelector('tbody').rows.length;
-const rowsInPage = 3;
+const rowsInPage = 6;
 const totalPages = Math.ceil(rows / rowsInPage);
 const $pagination = $('<ul class="pages text-center"></ul>');
+const $container = $('<div class="table-container"></div>');
 
 
 for (i = 0; i< totalPages; i++) {
     $('<li class="pageNumber">&nbsp;'+ ( i + 1) + '</li>').appendTo($pagination);
 }
+
+
 $(table).after($pagination);
+$container.append($pagination);
+$(table).appendTo($container)
+$container.foundation();
 
 $(table).find('tbody tr:has(td)').hide();
 const tr = $('table tbody tr:has(td)');
